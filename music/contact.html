@@ -2,7 +2,7 @@
 <!--
 Student Name: Your Name
 File Name: contact.html
-Date: October 1, 2026
+Date: October 4, 2026
 -->
 <html lang="en">
 
@@ -13,7 +13,9 @@ Date: October 1, 2026
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
 
@@ -65,7 +67,8 @@ Date: October 1, 2026
             </p>
 
             <p>
-                We are located at: 1122 Music Lane, Chicago, IL 60007
+                We are located at:
+                1122 Music Lane, Chicago, IL 60007
             </p>
 
             <iframe
@@ -76,6 +79,83 @@ Date: October 1, 2026
                 allowfullscreen=""
                 loading="lazy">
             </iframe>
+
+        </div>
+
+        <div id="form">
+
+            <h2>
+                Complete the form below and one of our staff members
+                will contact you.
+            </h2>
+
+            <!-- Start Form -->
+            <form class="form-grid">
+
+                <fieldset>
+
+                    <legend>Customer Information</legend>
+
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Musical Interest</legend>
+
+                    <p>I am interested in:</p>
+
+                    <label for="guitarles">
+                        <input type="checkbox"
+                            name="interest"
+                            id="guitarles"
+                            value="Guitar Lessons">
+                        Guitar Lessons
+                    </label>
+
+                    <label for="pianoles">
+                        <input type="checkbox"
+                            name="interest"
+                            id="pianoles"
+                            value="Piano Lessons">
+                        Piano Lessons
+                    </label>
+
+                    <label for="violinles">
+                        <input type="checkbox"
+                            name="interest"
+                            id="violinles"
+                            value="Violin Lessons">
+                        Violin Lessons
+                    </label>
+
+                    <label for="rent">
+                        <input type="checkbox"
+                            name="interest"
+                            id="rent"
+                            value="Rental Equipment">
+                        Rental Equipment
+                    </label>
+
+                </fieldset>
+
+                <input type="submit"
+                    id="submit"
+                    value="Submit"
+                    class="btn">
+
+            </form>
 
         </div>
 
