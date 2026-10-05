@@ -1,7 +1,7 @@
 /*
 Student Name: Your Name
 File Name: styles.css
-Date: October 1, 2026
+Date: October 4, 2026
 */
 
 /* CSS Reset */
@@ -101,9 +101,43 @@ main p {
     border-radius: 8px;
 }
 
+/* Style rules for instructors */
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373684;
+    text-shadow: 3px 3px 10px #8280cb;
+}
+
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 8px solid #373684;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 54, 132, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 /* Style rules for contact page */
 #contact {
     text-align: center;
+}
+
+#contact h2,
+#rental h2 {
+    font-size: 1.5em;
 }
 
 #contact .email-link {
@@ -134,35 +168,59 @@ main p {
     height: 50%;
 }
 
-/* Style rules for aside */
-aside {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #373684;
-    text-shadow: 3px 3px 10px #8280cb;
-}
-
-/* Style rules for figure */
-figure {
-    position: relative;
-    max-width: 275px;
-    margin: 2% auto;
-    border: 8px solid #373684;
-}
-
-/* Style rules for figcaption */
-figcaption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(55, 54, 132, 0.7);
-    color: #fff;
+/* Style rules for table */
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
     width: 100%;
-    padding: 5% 0;
-    text-align: center;
-    font-family: Verdana, Arial, sans-serif;
+}
+
+caption {
     font-size: 1.5em;
     font-weight: bold;
+    padding: 1%;
+}
+
+th,
+td {
+    border: 1px solid #373684;
+    padding: 2%;
+}
+
+th {
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: #b7b7e1;
+}
+
+/* Style rules for form elements */
+
+fieldset,
+input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+#form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
 }
 
 /* Style rules for footer */
@@ -177,7 +235,7 @@ footer a {
     text-decoration: none;
 }
 
-/* Tablet viewport */
+/* Tablet Viewport */
 @media screen and (min-width: 630px) {
 
     /* Show tab-desk class */
@@ -206,6 +264,12 @@ footer a {
         grid-column: 1 / span 2;
     }
 
+    /* Tablet form */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
     /* Tablet text */
     main p {
         font-size: 1.1em;
@@ -213,7 +277,7 @@ footer a {
 
 }
 
-/* Desktop viewport */
+/* Desktop Viewport */
 @media screen and (min-width: 769px) {
 
     /* Desktop navigation */
@@ -223,6 +287,11 @@ footer a {
 
     nav li a {
         padding: 0.5em 1em;
+    }
+
+    /* Desktop Viewport: Style rules for table */
+    table {
+        width: 70%;
     }
 
     /* Desktop grid */
