@@ -1,34 +1,63 @@
 /*
 Student Name: Your Name
 File Name: styles.css
-Date: October 4, 2026
+Date: October 11, 2026
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, h2, h3,
-div, img, ul, section, aside, figure, figcaption {
+body, header, nav, main, footer, h1, h2, h3, div, img,
+ul, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Style rule for images */
+/* Box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Images */
 img {
     max-width: 100%;
     display: block;
 }
 
-/* Style rule for box sizing applies to all elements */
-* {
-    box-sizing: border-box;
-}
+/* Mobile viewport */
 
-/* Hide tab-desk class */
+/* Hide desktop navigation */
 .tab-desk {
     display: none;
 }
 
-/* Style rules for header */
+/* Mobile navigation */
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mobile-nav div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
+#menu-links {
+    display: none;
+}
+
+/* Header */
 header {
     text-align: center;
     font-size: 1.5em;
@@ -37,32 +66,10 @@ header {
 
 header h1 {
     font-family: "DM Serif Display", serif;
+    font-size: 1.5em;
 }
 
-/* Style rules for navigation */
-nav {
-    background-color: #373684;
-}
-
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    display: block;
-    font-size: 2em;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
-/* Style rules for main content */
+/* Main content */
 main {
     padding: 2%;
     background-color: #e5e9fc;
@@ -80,7 +87,17 @@ main p {
     font-weight: bold;
 }
 
-/* Style rules for lessons */
+/* Mobile navigation list */
+nav ul {
+    list-style-type: none;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Lessons */
 #info {
     clear: left;
     background-color: #c0caf7;
@@ -91,9 +108,7 @@ main p {
     margin-left: 10%;
 }
 
-#piano,
-#guitar,
-#violin {
+#piano, #guitar, #violin {
     margin: 0 2%;
 }
 
@@ -101,7 +116,7 @@ main p {
     border-radius: 8px;
 }
 
-/* Style rules for instructors */
+/* Instructors */
 aside {
     text-align: center;
     font-size: 1.5em;
@@ -130,20 +145,13 @@ figcaption {
     font-weight: bold;
 }
 
-/* Style rules for contact page */
-#contact {
+/* Contact */
+#contact, #rental {
     text-align: center;
 }
 
-#contact h2,
-#rental h2 {
+#contact h2, #rental h2 {
     font-size: 1.5em;
-}
-
-#contact .email-link {
-    color: #4645a8;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .tel-link {
@@ -160,6 +168,12 @@ figcaption {
     text-decoration: none;
     font-size: 1.5em;
     display: block;
+}
+
+.email-link {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .map {
@@ -182,8 +196,7 @@ caption {
     padding: 1%;
 }
 
-th,
-td {
+th, td {
     border: 1px solid #373684;
     padding: 2%;
 }
@@ -199,9 +212,7 @@ tr:nth-child(odd) {
 }
 
 /* Style rules for form elements */
-
-fieldset,
-input {
+fieldset, input {
     margin-bottom: 2%;
 }
 
@@ -223,7 +234,7 @@ label {
     font-size: 1em;
 }
 
-/* Style rules for footer */
+/* Footer */
 footer {
     text-align: center;
     font-size: 0.65em;
@@ -238,22 +249,38 @@ footer a {
 /* Tablet Viewport */
 @media screen and (min-width: 630px) {
 
-    /* Show tab-desk class */
     .tab-desk {
-        display: inline;
+        display: block;
     }
 
-    /* Tablet navigation */
+    .mobile-nav {
+        display: none;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
     nav li {
         display: inline-block;
         font-size: 1.5em;
     }
 
     nav li a {
+        display: block;
         padding: 0.25em 0.5em;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
     }
 
-    /* Tablet grid */
     .grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -264,54 +291,42 @@ footer a {
         grid-column: 1 / span 2;
     }
 
-    /* Tablet form */
     form {
         width: 70%;
         margin: 0 auto;
     }
 
-    /* Tablet text */
     main p {
         font-size: 1.1em;
     }
-
 }
 
 /* Desktop Viewport */
 @media screen and (min-width: 769px) {
 
-    /* Desktop navigation */
-    nav li {
-        font-size: 1.5em;
+    nav li a:hover {
+        padding: 4%;
+        margin-right: 15%;
+        transform: scale(1.2);
     }
 
-    nav li a {
-        padding: 0.5em 1em;
-    }
-
-    /* Desktop Viewport: Style rules for table */
     table {
         width: 70%;
     }
 
-    /* Desktop grid */
     .grid {
         grid-template-columns: auto auto auto auto;
     }
 
-    /* Desktop figcaption */
     figcaption {
         font-size: 1em;
     }
 
-    /* Desktop aside */
     aside {
         grid-column: 1 / span 4;
     }
 
-    /* Desktop main */
     main p {
         font-size: 1.25em;
     }
-
 }
