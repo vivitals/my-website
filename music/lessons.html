@@ -2,7 +2,7 @@
 <!--
 Student Name: Your Name
 File Name: lessons.html
-Date: October 11, 2026
+Date: October 18, 2026
 -->
 <html lang="en">
 <head>
@@ -23,7 +23,7 @@ Date: October 11, 2026
             <a href="rentals.html">Rentals</a>
             <a href="contact.html">Contact Us</a>
         </div>
-        <a class="menu-icon" onclick="hamburger()">
+        <a class="menu-icon" href="javascript:void(0)" onclick="hamburger()" aria-label="Open navigation menu">
             <div>&#9776;</div>
         </a>
     </nav>
@@ -36,7 +36,7 @@ Date: October 11, 2026
     <nav class="tab-desk">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="lessons.html" aria-current="page">Lessons</a></li>
             <li><a href="instructors.html">Instructors</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -44,29 +44,57 @@ Date: October 11, 2026
     </nav>
 
     <main>
-        <section id="piano">
+        <section id="info">
+            <h2>Private Lessons</h2>
+            <p>Whether you are picking up an instrument for the first time or building on skills you already have, Strike a Chord can help you grow as a musician. Our instructors tailor each lesson to your goals and experience.</p>
+            <p>Lessons include:</p>
+            <ul>
+                <li>One-on-one instruction for your instrument and skill level</li>
+                <li>Practice tips to help you improve between lessons</li>
+                <li>Music reading, rhythm, technique, and performance skills</li>
+                <li>A supportive learning environment for beginners and experienced players</li>
+            </ul>
+        </section>
+
+        <section id="piano" class="lesson-section">
             <h2>Piano Lessons</h2>
-            <img src="images/piano-lesson.jpeg" alt="piano lesson" class="round">
-            <p>Learn to play piano with lessons suited to your experience.</p>
+            <img src="images/piano-lesson.jpeg" alt="A student practicing piano" class="round">
+            <p>Learn melodies, chords, rhythm, and music reading with piano lessons designed around your pace. Beginners can build a strong foundation, while experienced players can work on technique and expression.</p>
+            <div class="audio-sample">
+                <h3>Piano Sample Performance</h3>
+                <p>Listen to a short, original piano-style melody generated right in your browser.</p>
+                <button type="button" class="audio-button" onclick="playSample('piano', this)">&#9654; Play piano sample</button>
+            </div>
         </section>
 
-        <section id="guitar">
+        <section id="guitar" class="lesson-section">
             <h2>Guitar Lessons</h2>
-            <img src="images/guitar-lesson.jpeg" alt="guitar lesson" class="round">
-            <p>Build your guitar skills with help from our instructors.</p>
+            <img src="images/guitar-lesson.jpeg" alt="A student practicing guitar" class="round">
+            <p>Practice chords, strumming, picking, and timing while learning songs and techniques suited to your interests. Lessons can focus on acoustic or electric guitar fundamentals.</p>
+            <div class="audio-sample">
+                <h3>Guitar Sample Performance</h3>
+                <p>Listen to a short, original plucked-string-style melody generated right in your browser.</p>
+                <button type="button" class="audio-button" onclick="playSample('guitar', this)">&#9654; Play guitar sample</button>
+            </div>
         </section>
 
-        <section id="violin">
+        <section id="violin" class="lesson-section">
             <h2>Violin Lessons</h2>
-            <img src="images/woman-violin.jpeg" alt="violin lesson" class="round">
-            <p>Develop your violin technique with guided instruction.</p>
+            <img src="images/woman-violin.jpeg" alt="A musician playing violin" class="round">
+            <p>Develop good posture, bow control, intonation, and rhythm. Our lesson approach helps students build confidence step by step while learning to play with expression.</p>
+            <div class="audio-sample">
+                <h3>Violin Sample Performance</h3>
+                <p>Listen to a short, original violin-style melody generated right in your browser.</p>
+                <button type="button" class="audio-button" onclick="playSample('violin', this)">&#9654; Play violin sample</button>
+            </div>
         </section>
+
+        <p class="lesson-contact">Ready to get started? <a href="contact.html">Contact us</a> to ask about lesson options.</p>
     </main>
 
     <footer>
         <p>&copy; Copyright 2021. All Rights Reserved.</p>
-        <p><a href="mailto:lessons@strikeachord.net">
-            lessons@strikeachord.net</a></p>
+        <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
     </footer>
 
     <script src="scripts/script.js"></script>

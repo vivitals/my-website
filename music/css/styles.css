@@ -330,3 +330,97 @@ footer a {
         font-size: 1.25em;
     }
 }
+
+
+/* Lessons page additions */
+.lesson-section {
+    margin: 2% 0;
+    padding: 2%;
+    overflow: auto;
+}
+
+.lesson-section h2,
+#info h2 {
+    color: #373684;
+    margin-bottom: 1%;
+}
+
+.lesson-section img {
+    width: 40%;
+    max-width: 320px;
+    margin: 0 2% 2% 0;
+    float: left;
+}
+
+#info {
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+#info p {
+    margin: 1% 0;
+}
+
+#info ul {
+    margin: 1% 0 1% 5%;
+    line-height: 1.7;
+}
+
+.audio-sample {
+    clear: both;
+    margin-top: 2%;
+    padding: 1.5%;
+    background-color: #f7f7ff;
+    border-left: 4px solid #373684;
+}
+
+.audio-sample h3 {
+    color: #373684;
+    margin-bottom: 0.5%;
+}
+
+.audio-button {
+    margin-top: 1%;
+    padding: 0.7em 1em;
+    border: 0;
+    border-radius: 5px;
+    background-color: #373684;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.audio-button:hover,
+.audio-button:focus {
+    background-color: #4645a8;
+}
+
+.audio-button:disabled {
+    opacity: 0.75;
+    cursor: wait;
+}
+
+.lesson-contact {
+    padding: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lesson-contact a {
+    color: #4645a8;
+}
+
+@media screen and (max-width: 629px) {
+    .lesson-section img {
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin: 1% 0;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    .lesson-section {
+        min-height: 220px;
+    }
+}
