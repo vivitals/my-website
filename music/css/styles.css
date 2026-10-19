@@ -1,84 +1,15 @@
 /* Strike a Chord — Lesson 9 reference styling */
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
-body { font-family: Arial, Helvetica, sans-serif; color: #111; background: #e5e9fc; }
-img { max-width: 100%; height: auto; display: block; }
-header { background: #fff; color: #373684; text-align: center; min-height: 122px; padding: 27px 10px; }
-header h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 2.6rem; font-style: italic; font-weight: bold; }
-.tab-desk { display: block; }
-.mobile-nav { display: none; }
-nav.tab-desk { background: #373684; text-align: center; min-height: 47px; }
-nav ul { margin: 0; padding: 0; list-style: none; }
-nav li { display: inline-block; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; }
-nav li a { display: block; color: #fff; text-decoration: none; padding: 12px 30px; border-right: 1px solid #d8d8ee; }
-nav li a:hover, nav li a:focus { background: #e5e9fc; color: #373684; }
-main { background: #e5e9fc; padding: 2%; overflow: auto; min-height: 280px; }
-main p { font-size: 1.1rem; line-height: 1.25; }
-#hero { height: auto; min-height: 300px; background: #fff url("../images/music-notes.jpeg") center center / cover no-repeat; }
-#intro { padding: 1% 0; }
-#intro p { margin: 1.5% 0; }
-.action { font-weight: bold; color: #373684; }
-#info { clear: both; background: #c0caf7; padding: 1% 2%; margin-bottom: 1.5%; }
-#info ul { margin-left: 5%; }
-#piano, #guitar, #violin { padding: 1%; }
-.round { border-radius: 7px; }
-.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2%; }
-.grid > aside { grid-column: 1 / -1; text-align: center; font-size: 1.5rem; font-weight: bold; color: #373684; text-shadow: 2px 2px 7px #8280cb; padding: 1.5% 0 2%; }
-figure { position: relative; width: 100%; max-width: 275px; margin: 2% auto; border: 7px solid #373684; }
-figure img { width: 100%; height: 315px; object-fit: cover; }
-figcaption { position: absolute; bottom: 0; left: 0; width: 100%; padding: 5%; text-align: center; background: rgba(55,54,132,.72); color: #fff; font-weight: bold; }
-#rental, #contact, #form { text-align: center; }
-#rental h2, #contact h2, #form h2 { font-size: 1.35rem; margin: 1.5% 0; }
-table { width: 70%; border-collapse: collapse; margin: 1% auto 0; text-align: left; }
-caption { font-size: 1.3rem; font-weight: bold; padding: 1%; }
-th, td { border: 1px solid #373684; padding: 2%; }
-th { background: #373684; color: #fff; text-align: center; }
-tr:nth-child(even) { background: #b7b7e1; }
-tr:nth-child(odd) { background: #e5e9fc; }
-.tel-link { margin: 1% auto; }
-.tel-link a, .email-link { color: #4645a8; font-weight: bold; text-decoration: none; }
-.map { border: 5px solid #373684; width: min(95%, 460px); height: 410px; }
-form { width: 100%; margin: 1% auto; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5%; text-align: left; }
-fieldset { padding: 1.5%; margin: 0; min-width: 0; }
-legend { font-weight: bold; font-size: 1.1rem; }
-label { display: block; padding-top: 2%; }
-input, select, textarea { margin-bottom: 2%; max-width: 100%; }
-#form #submit { display: block; margin: 2% auto 0; padding: 2.5% 4%; background: #b7b7e1; font-size: 1rem; cursor: pointer; }
-footer { clear: both; text-align: center; background: #fff; font-family: Georgia, "Times New Roman", serif; font-size: .65rem; padding: 8px 4px; }
-footer p { margin: 5px 0; }
-footer a { color: #4645a8; text-decoration: none; }
-@media (min-width: 769px) {
-  #hero { min-height: 530px; }
-  #intro { padding: 1% 0; }
-  .lessons-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2%; }
-  .lessons-grid section { min-width: 0; }
-}
-@media (min-width: 630px) and (max-width: 768px) {
-  header { min-height: 100px; }
-  header h1 { font-size: 2.1rem; }
-  nav li a { padding: 12px 15px; }
-  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  table { width: 95%; }
-  figure img { height: 280px; }
-}
-@media (max-width: 629px) {
-  header { min-height: 82px; padding: 20px 8px; }
-  header h1 { font-size: 1.75rem; }
-  .tab-desk { display: none; }
-  .mobile-nav { display: block; background: #373684; position: relative; }
-  .mobile-nav a { display: block; color: #fff; text-align: center; padding: 12px; text-decoration: none; font-size: 1.05rem; }
-  #menu-links { display: flex; flex-wrap: wrap; justify-content: center; }
-  .mobile-nav a.menu-icon { display: none; }
-  main { padding: 4%; }
-  #hero { min-height: 220px; }
-  .grid, .lessons-grid, .form-grid { display: block; }
-  .grid > aside { font-size: 1.25rem; padding: 4% 0; }
-  figure { max-width: 320px; }
-  figure img { height: auto; }
-  table { width: 100%; font-size: .9rem; }
-  th, td { padding: 3%; }
-  .map { height: 300px; }
-  fieldset { margin-bottom: 4%; }
-  #form #submit { padding: 4% 10%; }
-}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;color:#111;background:#e5e9fc}img{max-width:100%;height:auto;display:block}
+header{background:#fff;color:#373684;text-align:center;min-height:122px;padding:27px 10px}header h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;font-style:italic;font-weight:bold}.tab-desk{display:block}.mobile-nav{display:none}
+nav.tab-desk{background:#373684;text-align:center;min-height:47px}nav ul{margin:0;padding:0;list-style:none}nav li{display:inline-block;font-family:Georgia,"Times New Roman",serif;font-size:1.25rem}nav li a{display:block;color:#fff;text-decoration:none;padding:12px 30px;border-right:1px solid #d8d8ee}nav li a:hover,nav li a:focus{background:#e5e9fc;color:#373684}
+main{background:#e5e9fc;padding:2%;overflow:auto;min-height:280px}main p{font-size:1.1rem;line-height:1.25}#hero{min-height:300px;background:#fff url("../images/music-notes.jpeg") center center/cover no-repeat}#intro{padding:1% 0}#intro p{margin:1.5% 0}.action{font-weight:bold;color:#373684}
+#info{clear:both;background:#c0caf7;padding:1% 2%;margin-bottom:1.5%}#info ul{margin-left:5%}#piano,#guitar,#violin{padding:1%}.round{border-radius:7px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2%}.grid>aside{grid-column:1/-1;text-align:center;font-size:1.5rem;font-weight:bold;color:#373684;text-shadow:2px 2px 7px #8280cb;padding:1.5% 0 2%}
+figure{position:relative;width:100%;max-width:275px;margin:2% auto;border:7px solid #373684}figure img{width:100%;height:315px;object-fit:cover}figcaption{position:absolute;bottom:0;left:0;width:100%;padding:5%;text-align:center;background:rgba(55,54,132,.72);color:#fff;font-weight:bold}
+#rental,#contact,#form{text-align:center}#rental h2,#contact h2,#form h2{font-size:1.35rem;margin:1.5% 0}.tel-link{margin:1% auto}.tel-link a,.email-link{color:#4645a8;font-weight:bold;text-decoration:none}
+table{width:70%;border-collapse:collapse;margin:1% auto 0;text-align:left}caption{font-size:1.3rem;font-weight:bold;padding:1%}th,td{border:1px solid #373684;padding:2%}th{background:#373684;color:#fff;text-align:center}tr:nth-child(even){background:#b7b7e1}tr:nth-child(odd){background:#e5e9fc}
+.map{border:5px solid #373684;width:min(95%,460px);height:410px}form{width:100%;margin:1% auto}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5%;text-align:left}fieldset{padding:1.5%;margin:0;min-width:0}legend{font-weight:bold;font-size:1.1rem}label{display:block;padding-top:2%}input,select,textarea{margin-bottom:2%;max-width:100%}#form #submit{display:block;margin:2% auto 0;padding:2.5% 4%;background:#b7b7e1;font-size:1rem;cursor:pointer}
+footer{clear:both;text-align:center;background:#fff;font-family:Georgia,"Times New Roman",serif;font-size:.65rem;padding:8px 4px}footer p{margin:5px 0}footer a{color:#4645a8;text-decoration:none}
+@media(min-width:769px){#hero{min-height:530px}.lessons-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2%}.lessons-grid section{min-width:0}}
+@media(min-width:630px) and (max-width:768px){header{min-height:100px}header h1{font-size:2.1rem}nav li a{padding:12px 15px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}table{width:95%}figure img{height:280px}}
+@media(max-width:629px){header{min-height:82px;padding:20px 8px}header h1{font-size:1.75rem}.tab-desk{display:none}.mobile-nav{display:block;background:#373684;position:relative}.mobile-nav a{display:block;color:#fff;text-align:center;padding:12px;text-decoration:none;font-size:1.05rem}#menu-links{display:flex;flex-wrap:wrap;justify-content:center}.mobile-nav a.menu-icon{display:none}main{padding:4%}#hero{min-height:220px}.grid,.lessons-grid,.form-grid{display:block}.grid>aside{font-size:1.25rem;padding:4% 0}figure{max-width:320px}figure img{height:auto}table{width:100%;font-size:.9rem}th,td{padding:3%}.map{height:300px}fieldset{margin-bottom:4%}#form #submit{padding:4% 10%}}
