@@ -13,3 +13,50 @@ footer{clear:both;text-align:center;background:#fff;font-family:Georgia,"Times N
 @media(min-width:769px){#hero{min-height:530px}.lessons-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2%}.lessons-grid section{min-width:0}}
 @media(min-width:630px) and (max-width:768px){header{min-height:100px}header h1{font-size:2.1rem}nav li a{padding:12px 15px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}table{width:95%}figure img{height:280px}}
 @media(max-width:629px){header{min-height:82px;padding:20px 8px}header h1{font-size:1.75rem}.tab-desk{display:none}.mobile-nav{display:block;background:#373684;position:relative}.mobile-nav a{display:block;color:#fff;text-align:center;padding:12px;text-decoration:none;font-size:1.05rem}#menu-links{display:flex;flex-wrap:wrap;justify-content:center}.mobile-nav a.menu-icon{display:none}main{padding:4%}#hero{min-height:220px}.grid,.lessons-grid,.form-grid{display:block}.grid>aside{font-size:1.25rem;padding:4% 0}figure{max-width:320px}figure img{height:auto}table{width:100%;font-size:.9rem}th,td{padding:3%}.map{height:300px}fieldset{margin-bottom:4%}#form #submit{padding:4% 10%}}
+
+/* Lesson 10: social media icons */
+.social_img {
+    display: inline-block;
+    padding: 4%;
+    width: 58px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+/* Tablet Viewport: Style rules for footer area */
+@media screen and (min-width: 630px) {
+    .copyright {
+        float: left;
+        width: 65%;
+        text-align: left;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+        text-align: right;
+    }
+
+    footer {
+        overflow: auto;
+        padding: 1% 2%;
+    }
+}
+
+/* Keep social icons aligned and usable on mobile */
+@media screen and (max-width: 629px) {
+    .copyright,
+    .social {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social_img {
+        padding: 2%;
+        width: 54px;
+    }
+}
